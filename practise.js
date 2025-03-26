@@ -1,14 +1,18 @@
-//asynchronous
+//spread operator
+const a =[2,5,1]
+const b = [...a,4]
+console.log(b)
 
-function a(){
-    setTimeout(() => {
-        let sum=0;
-        for(let i=0;i<1000000000;i++){
-            sum+=i;
-        }
-        console.log(sum);
-        
-    }, 2000);
+const car={
+    name:'bmw',
+    color:'red'
 }
-a();
-console.log("end");
+const modifyCar={
+    color:'blue',
+    adresss:'kuril'
+}
+
+const lastupdate={...car,...modifyCar}
+console.log(lastupdate)
+
+
